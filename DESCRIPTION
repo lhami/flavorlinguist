@@ -1,11 +1,15 @@
 Package: flavorlinguist
-Title: What the Package Does (One Line, Title Case)
+Title: Flavor Language, Isolated and Simplified
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Kyle", "Hamilton", , "hamilton@flavorlinguist.com", role = c("aut", "cre"))
+Description: An R Package for wrangling (English) flavor language, so you can prepare natural language flavor descriptions for statistical analyses, with minimal errors and minimal overhead. Written by and for sensory scientists.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+URL: https://github.com/lhami/flavorlinguist
+BugReports: https://github.com/lhami/flavorlinguist/issues
+Imports:
+  hunspell,
+  stringr
