@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# flavorlinguist
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of the flavorlinguist package is to provide a streamlined, low-overhead, low barrier to entry set of tools for preprocessing natural language flavor descriptions into tidy data that's ready for analysis.
+
+Many larger libraries for lemmatizing, annotating, and filtering natural language tokens are not stable, use a lot of computing space and power, and most importantly, don't perform very well on flavor descriptions because they're not a large part of the training set.
+
+The tools in this package are configured to give you a common sense, expected set of word counts at the most basic, but they're presented in a modular form that allows you to combine them with other libraries when necessary for your goals.
+
+## Installation
+
+You can install the development version of flavorlinguist from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("lhami/flavorlinguist")
+```
+
+## Example
+
+This package is a work-in-progress. For now, the first function to be implemented is `get_root()`, which takes a vector of (ideally pre-lemmatized) tokens and spits out their adjective forms.
+
+```{r example}
+library(flavorlinguist)
+x <- c("tart", "tartness", "tarts", "fruit", "fruity", "fruitiness", "fruits",
+"whiskey", "whisky", "nuts", "nut", "nutty", "rotten", "rotted", "rot",
+"peppery", "plummy", "cheese", "cheesy")
+get_root(x)
+```
