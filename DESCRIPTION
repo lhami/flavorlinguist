@@ -13,3 +13,6 @@ BugReports: https://github.com/lhami/flavorlinguist/issues
 Imports:
   hunspell,
   stringr
+LazyData: true
+Depends: 
+    R (>= 3.5)
